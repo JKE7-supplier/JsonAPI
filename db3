@@ -1,0 +1,233 @@
+{
+  "pages": [
+    {
+      "id": 90000004,
+      "styleId": "page-theme-3",
+      "pageCategory": "Demo Test",
+      "tracking":{
+        "state":"",
+        "action":"",
+        "context":"",
+        "category":""
+      },
+      "segmentsList": [
+        {
+          "id": "f7dcbe45-e14c-4395-8eb6-0f7447de1cf4",
+          "name": "Electronic Business Licenses Card",
+          "styleId": "Legal-Card-1",
+          "items": [
+            {
+              "id": "eaa15c52-ccd9-435c-9656-2e1f39f220a3",
+              "styleId": "Legal-Card-Item-1",
+              "order": 0,
+              "needDataSource": false,
+              "title": "沪ICP备15053331号-3",
+              "image": "https://static-le.shanghaidisneyresort.com/latest/direct-channel/resource/eEdf9cF8-ED3D-A4C2-53a4-B53e46e5A26e.jpg",
+              "showStatus": {
+                "inPeriod": "All",
+                "requireAP": "All",
+                "inPark": "All"
+              }
+            },
+            {
+              "id": "22474c8c-d2d8-403c-a068-029a7726e1c5",
+              "order": 0,
+              "needDataSource": false,
+              "title": "沪公网安备31011502002267号",
+              "image": "https://static-le.shanghaidisneyresort.com/latest/direct-channel/resource/3d981fCf-6C5A-A84b-ee9E-09dEc9e1Cc45.png",
+              "showStatus": {
+                "inPeriod": "All",
+                "requireAP": "All",
+                "inPark": "All"
+              }
+            },
+            {
+              "id": "fc6140d5-36d1-4ac9-8d73-8cfd39622555",
+              "order": 0,
+              "needDataSource": false,
+              "title": "电子营业执照",
+              "image": "https://static-le.shanghaidisneyresort.com/latest/direct-channel/resource/3AfEAc11-5262-D479-A9cE-0117BF3e9FdC.png",
+              "showStatus": {
+                "inPeriod": "All",
+                "requireAP": "All",
+                "inPark": "All"
+              }
+            }
+          ],
+          "showStatus": {
+            "inPeriod": "All",
+            "requireAP": "All",
+            "inPark": "All"
+          }
+        },
+        {
+          "id": "f7dcbe45-e14c-4395-8eb6-0f7447de1cf4",
+          "name": "Full Images List",
+          "styleId": "Full-Image-List-1",
+          "items": [
+            {
+              "id": "eaa15c52-ccd9-435c-9656-2e1f39f220a3",
+              "styleId": "Full-Image-Item-1",
+              "order": 0,
+              "needDataSource": false,
+              "image": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/9b70951ac53a1b53/Img_feature1.png",
+              "router":{
+                "method":"deeplink",
+                "path":"wdpr-shdr://weblink?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fen%2Fhalloween-celebration-2022%2F"
+              },
+              "showStatus": {
+                "inPeriod": "All",
+                "requireAP": "All",
+                "inPark": "All"
+              }
+            },
+            {
+              "id": "22474c8c-d2d8-403c-a068-029a7726e1c5",
+              "styleId": "Full-Image-Item-1",
+              "order": 0,
+              "needDataSource": false,
+              "router":{
+                "method":"deeplink",
+                "path":"wdpr-shdr://anniversary"
+              },
+              "image": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/b3225c18309a3fdb/Img_feature2.png",
+              "showStatus": {
+                "inPeriod": "All",
+                "requireAP": "All",
+                "inPark": "All"
+              }
+            },
+            {
+              "id": "fc6140d5-36d1-4ac9-8d73-8cfd39622555",
+              "order": 0,
+              "needDataSource": false,
+              "styleId": "Full-Image-Item-1",
+              "router":{
+                "method":"deeplink",
+                "path":"wdpr-shdr://hybrid?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fen%2Ftickets%2Fshdr-theme-park-ticket-concierge-services-package%2F"
+              },
+              "image": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/ee3e07b79792f945/mickey-avatarMobileSquare.png",
+              "showStatus": {
+                "inPeriod": "All",
+                "requireAP": "All",
+                "inPark": "All"
+              }
+            }
+          ],
+          "showStatus": {
+            "inPeriod": "All",
+            "requireAP": "All",
+            "inPark": "All"
+          }
+        }
+      ]
+    }
+  ],
+  "dataSource": [
+    {
+      "id": 1,
+      "code": "d50afe10a95c70fa",
+      "itemsList": [
+        {
+          "id": 5,
+          "title": "title1",
+          "name": "one2",
+          "image": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/7fbf0ebc08a004e1/9d86a09a09219d6997944f1c35df65b8.gif",
+          "background": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/c0ed1d5b979384ad/fistpic.png"
+        },
+        {
+          "id": 5,
+          "title": "title2",
+          "name": "title3",
+          "image": "https://secure.cdn2.wdpromedia.cn/media/wdpro-shdr-assets/prod/zh-cn-cn/system/images/shdr-homepage-billboard-5th-birthday-sc-v5.jpg",
+          "background": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/cbe3c53ffb0e256f/5th-birthday-small.jpg"
+        },
+        {
+          "id": 5,
+          "title": "title4",
+          "name": "one2",
+          "image": "https://secure.cdn2.wdpromedia.cn/media/wdpro-shdr-assets/prod/zh-cn-cn/system/images/shdr-homepage-billboard-crystal-pass-2021-sc-new-4.jpg"
+        },
+        {
+          "id": 5,
+          "title": "",
+          "name": "one2",
+          "image": "https://secure.cdn2.wdpromedia.cn/media/wdpro-shdr-assets/prod/zh-cn-cn/system/images/shdr-homepage-billboard-hotel-2021-sc-new-5.jpg"
+        },
+        {
+          "id": 5,
+          "title": "",
+          "name": "one2",
+          "image": "https://secure.cdn2.wdpromedia.cn/media/wdpro-shdr-assets/prod/zh-cn-cn/system/images/shdr-homepage-billboard-play-and-dine-2021-sc-new-4.jpg"
+        },
+        {
+          "id": 5,
+          "title": "",
+          "name": "one2",
+          "image": "https://cdn1.parksmedia.wdprapps.disney.com/dam/disney-world/home/video/50th/DIQF7427000H-walt-disney-world-50th-anniversary-video-1280x720.mp4",
+          "background": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/f3ebe9b131912b81/50th.png"
+        }
+      ],
+      "createTime": null,
+      "updateTime": null,
+      "remark": null
+    }
+  ],
+  "styles": [
+    {
+      "type": "Page",
+      "styleId": "page-theme-3",
+      "style": {
+        "font": {},
+        "color": {},
+        "layout": {}
+      }
+    },
+    {
+      "type": "Electronic Business Licenses Card",
+      "styleId": "Legal-Card-1",
+      "style": {
+        "font": {},
+        "color": {},
+        "layout": {}
+      }
+    },
+    {
+      "type": "Electronic Business Licenses Item",
+      "styleId": "Legal-Card-Item-1",
+      "style": {
+        "font": {},
+        "color": {},
+        "layout": {}
+      }
+    },
+    {
+      "type": "Full Images List",
+      "styleId": "Full-Image-List-1",
+      "style": {
+        "font": {},
+        "color": {},
+        "layout":{
+          "margin":{
+            "section":{
+              "left":0,
+              "right":0,
+              "top":0,
+              "bottom":0,
+              "horizon":0
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "Full Images Item",
+      "styleId": "Full-Image-Item-1",
+      "style": {
+        "font": {},
+        "color": {},
+        "layout": {}
+      }
+    }
+  ]
+}
