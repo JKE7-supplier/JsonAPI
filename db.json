@@ -1,233 +1,2910 @@
 {
-  "pages": [
-    {
-      "id": 90000004,
-      "styleId": "page-theme-3",
-      "pageCategory": "Demo Test",
-      "tracking":{
-        "state":"",
-        "action":"",
-        "context":"",
-        "category":""
+  "code": 0,
+  "success": true,
+  "data": {
+    "msg": null,
+    "pages": [
+      {
+        "id": "HomePageRevamp1.1",
+        "styleId": "page-common",
+        "tracking": {
+          "viewEvent": "page_view",
+          "properties": {
+            "view": {
+              "page_name": "content/homepage",
+              "screen_type": "homepage"
+            }
+          }
+        },
+        "pageCategory": "Home Page Revamp1.1",
+        "segmentsList": [
+          {
+            "id": "bc4e549a-7227-4883-a197-f94e40a4fab7",
+            "name": "Gyro Image CDP",
+            "styleId": "header-gryo-style-1",
+            "sourceCode": "TopBannerDatasourceRevamp1.1",
+            "items": [
+              {
+                "id": "d4fd9603-2542-40bc-82e7-cc305f0443e5",
+                "styleId": "header-gryo-item-style-1",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "customData": {
+              "ratio": 1.1574
+            },
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "0fa48bf8-d409-4c5d-a76f-74441508ee2d",
+            "name": "Homepage Key Entry",
+            "styleId": "key-entries",
+            "sourceCode": "KeyEntryRevamp1.1",
+            "items": [
+              {
+                "id": "75ba93ab-a71e-4e1e-ba30-4f618f1ffe27",
+                "styleId": "linkage-cta-item-common",
+                "order": 0,
+                "needDataSource": true
+              },
+              {
+                "id": "04292c2b-00cf-49f6-b099-78ca6dff9246",
+                "styleId": "linkage-cta-item-common",
+                "order": 0,
+                "itemSourceCode": "KeyEntryAllRevamp1.1",
+                "needDataSource": false
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "4b74a5fa-6d88-48bf-a287-e3469405f723",
+            "name": "Notification CDP",
+            "styleId": "Notificaiton-Revamp-1",
+            "tracking": {
+              "properties": {
+                "click": {
+                  "module_name": "news",
+                  "module_order": "2",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_id": "{id}",
+                  "cta_name": "view_all_notification"
+                }
+              },
+              "clickEvent": "module_click"
+            },
+            "router": {
+              "method": "deeplink",
+              "path": "wdpr-shdr://dynamicPage?pageCategory=Notification%20List",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false,
+              "privacyPolicyAcceptedRequired": ""
+            },
+            "sourceCode": "NotificationBarRevamp1.1",
+            "items": [
+              {
+                "id": "9ae0de80-c20b-47f3-bc60-deadd5288ab4",
+                "styleId": "linkage-notification-item-common",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "ae833195-9c0d-42f7-abf1-5208861adb9a",
+            "name": "Park Hours",
+            "styleId": "Park-Hour-Revamp-1",
+            "router": {
+              "method": "deeplink",
+              "path": "wdpr-shdr://parkhours",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false,
+              "privacyPolicyAcceptedRequired": ""
+            },
+            "sourceCode": "ParkHoursRevamp1.1",
+            "items": [
+              {
+                "id": "9d0a83d7-c272-466f-a1b7-06a62e9f4d20",
+                "styleId": "park-hours-item",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "1d4e8cda-fac2-4955-bff9-8c7cdc068f76",
+            "name": "Full Image List CDP",
+            "styleId": "Full-Image-List",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_name": "zootopia_hub"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "sourceCode": "promotionbannerdatasourceabovehighlgihts",
+            "items": [
+              {
+                "id": "5274c319-9cf1-49ea-a7a0-5e9d1234c38b",
+                "styleId": "Full-Image-Item-1",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "4548b9a7-955e-4192-ad8a-22e6546bbdfb",
+            "name": "Hot CDP",
+            "styleId": "horizon-scroll-3",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_name": "highlights",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_order": "2"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "sourceCode": "HotRegularDatasource",
+            "items": [
+              {
+                "id": "384c9e1d-f02c-4580-823d-2b23fef0fd2a",
+                "styleId": "title-more-header-common",
+                "order": 0,
+                "needDataSource": false,
+                "title": "热点"
+              },
+              {
+                "id": "313605a2-75e6-48e3-83c3-2ed92b846d8f",
+                "styleId": "hot-item-common",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "e159e965-b2c3-42eb-bccb-6bd2c5364ce0",
+            "name": "Progress Banner CDP",
+            "styleId": "progress-banner-common",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_name": "play",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_order": "3"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "sourceCode": "ProgressBannerDatasource",
+            "items": [
+              {
+                "id": "7b1f320b-82e9-4674-952c-008150d764f6",
+                "styleId": "title-more-header-common",
+                "tracking": {
+                  "properties": {
+                    "click": {
+                      "module_name": "play",
+                      "screen_type": "homepage",
+                      "page_name": "content/homepage",
+                      "module_order": "3"
+                    }
+                  },
+                  "clickEvent": "view_more_click"
+                },
+                "order": 0,
+                "needDataSource": false,
+                "title": "玩乐表演",
+                "subTitle": "更多",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://tabbar?path=SHDRFinder&subDeepLink=wdpr-shdr%3A%2F%2Fmap%2Flist%3FdummyType%3DAllFuns",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false,
+                  "privacyPolicyAcceptedRequired": "profile"
+                }
+              },
+              {
+                "id": "ab501b64-3b6d-4f4e-8159-00ae64d7b3e3",
+                "styleId": "banner-item-common",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "customData": {
+              "timeInterval": 3
+            },
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "e1b18e56-76bd-4a17-ab52-14b6888a606f",
+            "name": "Trisection Structure CDP",
+            "styleId": "trisection-structure-left-common",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_name": "hotel",
+                  "module_order": "3.2",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "sourceCode": "HotelTriSectionStrutureDatasource",
+            "items": [
+              {
+                "id": "13b09122-b281-4c30-af98-7d64357453b2",
+                "styleId": "title-more-header-common",
+                "tracking": {
+                  "properties": {
+                    "click": {
+                      "module_name": "hotel",
+                      "module_order": "3.2",
+                      "screen_type": "homepage",
+                      "page_name": "content/homepage"
+                    }
+                  },
+                  "clickEvent": "view_more_click"
+                },
+                "order": 0,
+                "needDataSource": false,
+                "title": "入住奇妙",
+                "subTitle": "更多",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://tabbar?path=SHDRFinder&subDeepLink=wdpr-shdr%3A%2F%2Fmap%2Flist%3FdummyType%3DHotel",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false,
+                  "privacyPolicyAcceptedRequired": "profile"
+                }
+              },
+              {
+                "id": "3ddcafc0-28bd-4fff-ae9c-0c3a81c6cdce",
+                "styleId": "trisection-structure-item-common",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "7c47b685-cb58-4944-b213-011e08f68969",
+            "name": "Trisection Structure CDP",
+            "styleId": "trisection-structure-left-common",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_name": "dining",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_order": "4"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "sourceCode": "DiningTriSectionStrutureDatasource",
+            "items": [
+              {
+                "id": "f85385e4-23b7-488e-a99c-e921332a66c2",
+                "styleId": "title-more-header-common",
+                "tracking": {
+                  "properties": {
+                    "click": {
+                      "module_name": "dining",
+                      "screen_type": "homepage",
+                      "page_name": "content/homepage",
+                      "module_order": "4"
+                    }
+                  },
+                  "clickEvent": "view_more_click"
+                },
+                "order": 0,
+                "needDataSource": false,
+                "title": "探索美食",
+                "subTitle": "更多",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://tabbar?path=SHDRFinder&subDeepLink=wdpr-shdr%3A%2F%2Fmap%2Flist%3FdummyType%3DRestaurant",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false,
+                  "privacyPolicyAcceptedRequired": "profile"
+                }
+              },
+              {
+                "id": "057d5691-6075-4e60-b3da-66d6ebcb1af0",
+                "styleId": "trisection-structure-item-common",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "e5e0dc51-8046-42cf-8a16-68539faf80f0",
+            "name": "Trisection Structure CDP",
+            "styleId": "trisection-structure-left-common",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_name": "shopping",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_order": "5"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "sourceCode": "ShoppingTriSectionStrutureDatasource",
+            "items": [
+              {
+                "id": "2989d44c-5c7b-4b38-8eda-2639c90b8e2f",
+                "styleId": "title-more-header-common",
+                "tracking": {
+                  "properties": {
+                    "click": {
+                      "module_name": "shopping",
+                      "screen_type": "homepage",
+                      "page_name": "content/homepage",
+                      "module_order": "5"
+                    }
+                  },
+                  "clickEvent": "view_more_click"
+                },
+                "order": 0,
+                "needDataSource": false,
+                "title": "探索商店",
+                "subTitle": "更多",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://tabbar?path=SHDRFinder&subDeepLink=wdpr-shdr%3A%2F%2Fmap%2Flist%3FdummyType%3DShop",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false,
+                  "privacyPolicyAcceptedRequired": "profile"
+                }
+              },
+              {
+                "id": "7147f0f1-a4e9-424d-af58-df387a3f8e5e",
+                "styleId": "trisection-structure-item-common",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "f4235acc-de5e-4437-8523-d7a3879fa4a9",
+            "name": "Collection V2 CDP",
+            "styleId": "collection-common",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_name": "travel_guide",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_order": "6"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "sourceCode": "TravelGuideCollectionDatasource",
+            "items": [
+              {
+                "id": "89d2fc8d-0910-403f-8368-c52a45064008",
+                "styleId": "title-more-header-common",
+                "tracking": {
+                  "properties": {
+                    "click": {
+                      "module_name": "travel_guide",
+                      "screen_type": "homepage",
+                      "page_name": "content/homepage",
+                      "module_order": "6"
+                    }
+                  },
+                  "clickEvent": "view_more_click"
+                },
+                "order": 0,
+                "needDataSource": false,
+                "title": "游园攻略",
+                "subTitle": "更多",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fgonglve.shanghaidisneyresort.com%2Fgonglve%3Flanguage%3Dzh-cn",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false
+                }
+              },
+              {
+                "id": "d0a0a26f-6ff0-42e9-9545-54b8abd6f151",
+                "styleId": "Collection-Item-With-White-Title",
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "customData": {
+              "colmnCount": 2
+            },
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "2e90d45d-45d8-4516-917a-60b61b21bd29",
+            "name": "Disney Characters",
+            "styleId": "Horizontal Scroll Zero Bottom",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_name": "disney_friends",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_order": "8"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "router": {
+              "method": "deeplink",
+              "path": "wdpr-shdr://hybrid?url=https://stage.central.shanghaidisneyresort.com/characters/{urlFriendlyId}",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false,
+              "privacyPolicyAcceptedRequired": ""
+            },
+            "sourceCode": "character",
+            "items": [
+              {
+                "id": "daef4b15-d9b8-4ccf-9acb-4ad1ecf05cca",
+                "styleId": "title-more-header-common",
+                "tracking": {
+                  "properties": {
+                    "click": {
+                      "module_name": "disney_friends",
+                      "screen_type": "homepage",
+                      "page_name": "content/homepage",
+                      "module_order": "8"
+                    }
+                  },
+                  "clickEvent": "view_more_click"
+                },
+                "order": 0,
+                "needDataSource": false,
+                "title": "迪士尼朋友",
+                "subTitle": "更多",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://hybrid?url=https://stage.central.shanghaidisneyresort.com/characters/",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false
+                }
+              },
+              {
+                "id": "07cc485c-e5ee-4724-a362-44465ebd2e8a",
+                "styleId": "Disney Characters-1",
+                "tracking": {
+                  "properties": {
+                    "click": {
+                      "module_name": "disney_friends",
+                      "module_id": "{id}",
+                      "screen_type": "homepage",
+                      "page_name": "content/homepage",
+                      "content_name": "{title}",
+                      "content_id": "{urlFriendlyId}",
+                      "module_order": "8"
+                    }
+                  },
+                  "clickEvent": "module_click"
+                },
+                "order": 0,
+                "needDataSource": true
+              }
+            ],
+            "customData": {
+              "colmnCount": 4
+            },
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "1ea71738-c1d6-40ed-ae38-be6d07896c32",
+            "name": "Question",
+            "styleId": "question-common",
+            "tracking": {
+              "properties": {
+                "view": {
+                  "module_name": "fun_facts",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_order": "9"
+                }
+              },
+              "viewEvent": "module_view"
+            },
+            "background": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/f7C37F4b-42Cd-A5EF-D677-e7bE6e1cF411.png",
+            "sourceCode": "066",
+            "items": [
+              {
+                "id": "a335589b-5fcb-4056-b52f-d4d1a2bd56a6",
+                "styleId": "question-title-common",
+                "tracking": {
+                  "properties": {
+                    "click": {
+                      "module_name": "fun_facts",
+                      "module_id": "{id}",
+                      "screen_type": "homepage",
+                      "page_name": "content/homepage",
+                      "content_name": "{title}",
+                      "content_id": "{id}",
+                      "module_order": "9"
+                    }
+                  },
+                  "clickEvent": "module_click"
+                },
+                "order": 0,
+                "needDataSource": true,
+                "subItems": [
+                  {
+                    "id": "9deed650-a4b1-4065-bd7b-794f009a3072",
+                    "styleId": "question-selection-common",
+                    "tracking": {
+                      "properties": {
+                        "click": {
+                          "module_name": "fun_facts",
+                          "module_id": "{id}",
+                          "screen_type": "homepage",
+                          "page_name": "content/homepage",
+                          "content_id": "{id}",
+                          "content_name": "{title}",
+                          "module_order": "9"
+                        }
+                      },
+                      "clickEvent": "module_click"
+                    },
+                    "order": 0,
+                    "needDataSource": true,
+                    "subItems": [
+                      {
+                        "id": "00b57664-fe6b-411e-8044-7b0894f760a5",
+                        "styleId": "question-selection-response-common",
+                        "order": 0,
+                        "needDataSource": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "customData": {
+              "correctImage": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/3DF06980-3A4D-A58E-97eD-DeDe1eF3AfaD.png"
+            },
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "16e3ff55-6516-4f7a-9602-a8770621048c",
+            "name": "Electronic Business Licenses",
+            "styleId": "Electronic Business Licenses",
+            "items": [
+              {
+                "id": "da457fc6-7f2b-430d-b1fb-dfb5a5ebfce2",
+                "styleId": "Legal-Card-Item-1",
+                "order": 0,
+                "needDataSource": false,
+                "title": "沪ICP备15053331号-5A",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://weblink?url=https%3A%2F%2Fbeian.miit.gov.cn%2F%23%2FrecordQuery",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false
+                },
+                "showStatus": {
+                  "inPeriod": "All",
+                  "requireAP": "All",
+                  "inPark": "All"
+                }
+              },
+              {
+                "id": "f8b27a0f-aec4-45c5-a0bb-82e7508cf2b2",
+                "styleId": "Legal-Card-Item-1",
+                "order": 0,
+                "needDataSource": false,
+                "title": "沪公网安备 31011502002267号",
+                "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/C1dC63Ff-9E3A-D23c-F77C-eC3D32b7521e.png",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://weblink?url=http%3A%2F%2Fwww.beian.gov.cn%2Fportal%2FregisterSystemInfo%3Frecordcode%3D31011502002267",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false
+                },
+                "showStatus": {
+                  "inPeriod": "All",
+                  "requireAP": "All",
+                  "inPark": "All"
+                }
+              },
+              {
+                "id": "e8b6d987-9188-49bb-ab68-6357924f1955",
+                "styleId": "Legal-Card-Item-1",
+                "order": 0,
+                "needDataSource": false,
+                "title": "电子营业执照",
+                "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/5f7Ef90e-7441-5639-e4dC-C8953F9ACdCb.png",
+                "router": {
+                  "method": "deeplink",
+                  "path": "wdpr-shdr://weblink?url=https%3A%2F%2Fwap.scjgj.sh.gov.cn%2FbusinessCheck%2FverifKey.do%3FshowType%3DextShow%26serial%3D9031000020230307213745000010185331-SAIC_SHOW_310000-077e78cb6b0e4ffa83ad6408f590eda5091%26signData%3DMEQCIBVX4COQofapI1J3FB83Ge4oJgYku0%2FxfIGQqs5I1bCoAiAIme7Qvjv%2BXA%2B7l2qYU23Fa69RqlYn0LuwA4GkyrrNhA%3D%3D",
+                  "requiredLogin": false,
+                  "isAccessibilitySupport": false
+                },
+                "showStatus": {
+                  "inPeriod": "All",
+                  "requireAP": "All",
+                  "inPark": "All"
+                }
+              }
+            ],
+            "showStatus": {
+              "inPeriod": "All",
+              "requireAP": "All",
+              "inPark": "All"
+            }
+          }
+        ],
+        "displayType": "Present"
+      }
+    ],
+    "dataSource": [
+      {
+        "id": 1599,
+        "code": "066",
+        "itemsList": [
+          {
+            "id": "eec617b5-2337-4c45-be16-fec6d5698039",
+            "itemKey": "49598555-49e6-4b7c-9864-f508ec046610",
+            "title": "哪一位迪士尼公主为躲避皇后曾在森林中居住？",
+            "subItems": [
+              {
+                "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/ED2b66a9-74C8-44cB-8D13-e2f7ceEdf81c.jpg",
+                "subItems": [
+                  {
+                    "subTitle": "来“迪士尼奇幻冬日巡游”中有机会见到她哦",
+                    "id": "a3c07cb7-eb86-47f0-a97a-1b98c0e63927",
+                    "title": "真遗憾！是白雪公主",
+                    "order": 0
+                  }
+                ],
+                "id": "Question_option_1",
+                "title": "爱丽儿",
+                "order": 0
+              },
+              {
+                "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/cf7CFeBE-98ce-b521-38eD-5d89067FBDcf.jpg",
+                "subItems": [
+                  {
+                    "subTitle": "来“迪士尼奇幻冬日巡游”中有机会见到她哦",
+                    "id": "1f2a6ee9-f8c0-4128-bf35-b736a24dc505",
+                    "title": "没错~是白雪公主",
+                    "order": 0
+                  }
+                ],
+                "id": "Question_option_2",
+                "title": "白雪公主",
+                "order": 0
+              }
+            ],
+            "customData": {
+              "answer": "Question_option_2"
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "segmentation": [],
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 1,
+        "groupNum": 5,
+        "isOrder": false,
+        "mobileNum": 1
       },
+      {
+        "id": null,
+        "code": "character",
+        "itemsList": [
+          {
+            "title": "杰拉多尼",
+            "name": "杰拉多尼",
+            "image": "https://static-le.shanghaidisneyresort.com/70911d41b234e40b/media/10b591ab02f5be7a/Gelatoni-icontiny.png",
+            "customData": {
+              "subTitle": "杰拉多尼",
+              "urlFriendlyId": "gelatoni"
+            }
+          },
+          {
+            "title": "玲娜贝儿",
+            "name": "玲娜贝儿",
+            "image": "https://static-le.shanghaidisneyresort.com/70911d41b234e40b/media/404c0a40de96dba0/icon-linabell-480*480.png",
+            "customData": {
+              "subTitle": "玲娜贝儿",
+              "urlFriendlyId": "linabell"
+            }
+          },
+          {
+            "title": "可琦安",
+            "name": "可琦安",
+            "image": "https://static-le.shanghaidisneyresort.com/70911d41b234e40b/media/a71471ed24b026e3/avatar_cookieann.png",
+            "customData": {
+              "subTitle": "可琦安",
+              "urlFriendlyId": "cookieann"
+            }
+          },
+          {
+            "title": "星黛露 ",
+            "name": "星黛露 ",
+            "image": "https://static-le.shanghaidisneyresort.com/70911d41b234e40b/media/a1318ddc2b2281d3/StellaLou-icontiny.png",
+            "customData": {
+              "subTitle": "星黛露 ",
+              "urlFriendlyId": "stellalou"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 0,
+        "groupNum": 2,
+        "isOrder": false,
+        "mobileNum": 4
+      },
+      {
+        "id": 1582,
+        "code": "promotionbannerdatasourceabovehighlgihts",
+        "itemsList": [
+          {
+            "id": "5a57b83d-abb2-4aa8-a8c6-e153e1d79c1c",
+            "itemKey": "eb840d90-c9e6-4b9d-acd3-998899a08725",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/5E0cbf4E-59ED-63CE-96BD-eCedc3dccf1A.png",
+            "router": {
+              "path": "wdpr-shdr://zootopia",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "profile",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "width": 1125,
+              "height": 483
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "zootopia_hub",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "zootopia_hub",
+                  "module_order": "NA"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            },
+            "accessibility": {
+              "image": "成为疯狂动物城居民，获得动物城专属福利，立即加入。"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": 1
+      },
+      {
+        "id": 945,
+        "code": "ParkHoursRevamp1.1",
+        "itemsList": [
+          {
+            "id": "3542fff1-68cf-47f3-8a07-216c913691ae",
+            "itemKey": "16376ce4-5512-4fba-b981-b77a2cf1982d",
+            "title": "乐园运营时间",
+            "subTitle": "更多日期",
+            "router": {
+              "path": "wdpr-shdr://parkhours",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "view_calendar",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "park_hours"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": null
+      },
+      {
+        "id": 1498,
+        "code": "KeyEntryAllRevamp1.1",
+        "itemsList": [
+          {
+            "id": "2e56d840-d494-42f5-870f-b64fe45c86aa",
+            "itemKey": "74187186-3aae-4a20-b4ff-4caf9b96a6ce",
+            "title": "全部",
+            "name": "for_more",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/6Ae936bf-5AFa-5A5f-4EDe-6EE91c28Dc72.png",
+            "router": {
+              "path": "wdpr-shdr://dynamicPage?pageCategory=Site_Map",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": 1
+      },
+      {
+        "id": 1283,
+        "code": "ShoppingTriSectionStrutureDatasource",
+        "itemsList": [
+          {
+            "id": "2abee064-284c-4267-9fc0-e341c20247e0",
+            "itemKey": "e9cf0c70-eef6-46cc-b661-c280e596027d",
+            "subTitle": "乐园内最大的商店",
+            "name": "avenue_m_arcade",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/fb744FC1-fFEf-23d5-FdDC-7BaF5fADB943.png",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/shopAvenueMArcade;entityType=MerchandiseFacility;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "facilityId": "shopAvenueMArcade;entityType=MerchandiseFacility;destination=shdr",
+              "dummyType": "Shop"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "shopping",
+                  "module_order": "5"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "f109bca4-aecb-4621-8cbf-369df8552b64",
+            "itemKey": "46309e76-0ec9-447d-a0a5-96ef85a50ba2",
+            "name": "world_disney_store",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/D04dAFDc-14E2-17EE-6d18-5eF0cfe2dCBe.jpg",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/shopWorldDisneyStore;entityType=MerchandiseFacility;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "facilityId": "shopWorldDisneyStore;entityType=MerchandiseFacility;destination=shdr",
+              "dummyType": "Shop"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "shopping",
+                  "module_order": "5"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "beeb3908-8b08-433c-9940-781c088d9a47",
+            "itemKey": "ff9a42a4-9d0b-4354-9259-2bcca189e3e5",
+            "name": "sweethearts_confectionery",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/B6Fe4d36-1A31-6D16-AC53-E5b377AE6DAf.jpg",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/shopSweetheartsConfectionery;entityType=MerchandiseFacility;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "facilityId": "shopSweetheartsConfectionery;entityType=MerchandiseFacility;destination=shdr",
+              "dummyType": "Shop"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "shopping",
+                  "module_order": "5"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": null
+      },
+      {
+        "id": 1496,
+        "code": "KeyEntryRevamp1.1",
+        "itemsList": [
+          {
+            "id": "3bc35c11-6385-4f2f-b3f5-2148bd1bdf7e",
+            "itemKey": "dfbff71e-b541-4bd0-94bd-d522f708e936",
+            "title": "门票",
+            "name": "ticket",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/6509Bf97-bd15-cC47-5FC2-b83A308aFDcF.png",
+            "router": {
+              "path": "wdpr-shdr://tabbar?path=wdpr-shdr%3A%2F%2Fhybrid%3Furl%3Dhttps%3A%2F%2Fstage.central.shanghaidisneyresort.com%2Fcommerce%2F&parameter=%7B%22action%22%3A%22redirectTo%22%2C%22props%22%3A%22%2Fproduct%2F%3Fid%3DThemePark%22%7D&subDeepLink=",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": true
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "purchase_ticket",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "444b6b12-158e-498b-b860-7e49397a4445",
+            "itemKey": "fd410f03-5960-4033-8dca-5ce8a8ce8849",
+            "title": "酒店",
+            "name": "hotels",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/b1Fafac8-61cC-1b14-CcCb-4aa5EA91a2AD.png",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.central.shanghaidisneyresort.com%2Fcommerce%2Fhotel%2F%3Fentry_point%3Dhomepage_dashboard",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "e64b9e82-703f-43de-8ec1-8f25f4bcafa2",
+            "itemKey": "e07c2978-8cec-4e39-a022-68dfeb48020d",
+            "title": "年卡",
+            "name": "annual_pass",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/F24dB5e4-3D6d-05f5-3512-0F53ED8eFeDf.png",
+            "router": {
+              "path": "wdpr-shdr://tabbar?path=wdpr-shdr%3A%2F%2Fhybrid%3Furl%3Dhttps%3A%2F%2Fstage.central.shanghaidisneyresort.com%2Fcommerce%2F&parameter=%7B%22action%22%3A%22redirectTo%22%2C%22props%22%3A%22%2Fproduct%2F%3Fid%3DAnnualPass%22%7D&subDeepLink=",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": true
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "80e2c225-6cee-4b05-936e-f014ca3a72b9",
+            "itemKey": "def0a174-92af-4402-93e1-7f0e38568c17",
+            "title": "尊享卡",
+            "name": "premier_access",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/eEAA935C-3D2A-AB9c-FFeD-adDCE55fbeeF.png",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.central.shanghaidisneyresort.com%2Fcommerce%2Fdpa%3Ffrom%3Dhomepage_quick_link",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "9cbfdccb-f46d-417b-b601-7549dc06a1cc",
+            "itemKey": "c94059d9-a25d-45dd-ae65-06c21d00915c",
+            "title": "乐园早享卡",
+            "name": "early_park_entry_pass",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/7E9e3cCD-5A37-fd3F-62Ce-C2DEe4C149bA.png",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.central.shanghaidisneyresort.com%2Fcommerce%2Fepep%2Fproduct%2Fshdr-early-park-entry-pass%3BfromHomepage%3Dtrue",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "4c1698cd-7d31-4633-a1e8-8e3bf4f27b41",
+            "itemKey": "e24101de-8cac-46c9-8585-990a4248d588",
+            "title": "领券中心",
+            "name": "coupon_center",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/c5A7bc0B-41ad-3221-BBee-f6ec3eeee8BC.png",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.central.shanghaidisneyresort.com%2Fcommerce%2Fecoupon%2Fproducts%2Fcoupon-center",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "fd49a513-5c6e-4dcf-bb38-760bf29ff478",
+            "itemKey": "c7676265-8af2-430a-b575-ea2d3dca778f",
+            "title": "游园攻略",
+            "name": "travel_tips",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/3f24E75d-423B-B2B7-f27b-EeC6eA10C35e.png",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fgonglve.shanghaidisneyresort.com%2Fgonglve%3Flanguage%3Dzh-cn",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "c3ed53a7-ea69-4f68-a7e7-c53fca7087e7",
+            "itemKey": "da534d27-4cb7-4dc5-a090-24350aa644fa",
+            "title": "玩乐表演",
+            "name": "play",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/9d1eD9Ec-E89c-be88-FAD6-3db2F559E7B2.png",
+            "router": {
+              "path": "wdpr-shdr://tabbar?path=SHDRFinder&subDeepLink=wdpr-shdr%3A%2F%2Fmap%2Flist%3FdummyType%3DAllFuns",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "profile",
+              "requiredLogin": false,
+              "isAccessibilitySupport": true
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "379aa160-a89c-402c-97f6-3efc56122157",
+            "itemKey": "241dc38c-3fd0-4298-a2df-33903192d990",
+            "title": "餐饮",
+            "name": "dining",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/B9DA5AbE-BC27-Ea66-F1b0-BD6eA7F66aeb.png",
+            "router": {
+              "path": "wdpr-shdr://tabbar?path=SHDRFinder&subDeepLink=wdpr-shdr%3A%2F%2Fmap%2Flist%3FdummyType%3DRestaurant",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "profile",
+              "requiredLogin": false,
+              "isAccessibilitySupport": true
+            },
+            "tracking": {
+              "clickEvent": "dashboard_click",
+              "properties": {
+                "click": {
+                  "cta_name": "{name}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": 9
+      },
+      {
+        "id": 1588,
+        "code": "DiningTriSectionStrutureDatasource",
+        "itemsList": [
+          {
+            "id": "d9166826-0317-42e3-9762-81b7cc941ece",
+            "itemKey": "26ed8737-3f3b-4612-adb6-4e49c300c90b",
+            "subTitle": "童话城堡 赏味奇妙",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/fcf0ED7F-d89B-E555-DBdC-2ae4cC4FcBA8.jpg",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/dineRoyalBanquetHall;entityType=restaurant;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "requiredLogin": false
+            },
+            "customData": {
+              "facilityId": "dineRoyalBanquetHall;entityType=restaurant;destination=shdr",
+              "dummyType": "Restaurant"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "dining",
+                  "module_order": "4"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "ffbf077f-102b-4c57-8448-ce5ea6de5620",
+            "itemKey": "2508e29d-a734-4751-b6fc-041c0bc6baf2",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/57D9E61E-76CD-9ef5-e8eC-A1CB9BfddF4E.png",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/dineTangledTreeTavern;entityType=restaurant;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "facilityId": "dineTangledTreeTavern;entityType=restaurant;destination=shdr",
+              "dummyType": "Restaurant"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "dining",
+                  "module_order": "4"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "4e8fc8cb-fb06-4099-b89b-e43ad51034ea",
+            "itemKey": "8a4ebdc3-9395-4976-af19-99c09953c508",
+            "name": "stargazer_grill",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/AeAa70bE-8fdE-4BEe-9BF8-bFea044eE9a4.png",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/dineStargazerGrill;entityType=restaurant;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "facilityId": "dineStargazerGrill;entityType=restaurant;destination=shdr",
+              "dummyType": "Restaurant"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "dining",
+                  "module_order": "4"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": null
+      },
+      {
+        "id": 1594,
+        "code": "ProgressBannerDatasource",
+        "itemsList": [
+          {
+            "id": "2590659b-a97d-403e-a07d-1635b01e2132",
+            "itemKey": "82258e49-6ef3-42c9-9d9c-8860136a0497",
+            "subTitle": "踏入光影交织的迪士尼奇梦，点亮你心中的光！",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/bF9ACfd7-afc8-Bdc4-ce8D-e8cDB7Cbd754.mp4",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/entIgniteDreamNighttimeSpectacular;entityType=Entertainment;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "facilityId": "entIgniteDreamNighttimeSpectacular;entityType=Entertainment;destination=shdr",
+              "dummyType": "Entertainment"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "play",
+                  "module_order": "3"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "0195caf7-9a42-457d-b49f-3128fe591482",
+            "itemKey": "5f57c1fb-4e7f-4a67-a9ac-4815a5e0930e",
+            "subTitle": "满载音乐和魔法，和迪士尼朋友们一起“快乐无边”！",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/B33dB4A4-f61b-f7f0-ce60-9EcD3D6A5cCa.mp4",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/entMickeysStorybookExpress;entityType=Entertainment;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "requiredLogin": false
+            },
+            "customData": {
+              "facilityId": "entMickeysStorybookExpress;entityType=Entertainment;destination=shdr",
+              "dummyType": "Entertainment"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "play",
+                  "module_order": "3"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "5f06451f-f539-4645-9b6a-182e02ca2588",
+            "itemKey": "5baf0fce-8483-4c16-8acb-9666458f9385",
+            "subTitle": "朱迪和尼克邀你驾驶警车，一路沉浸在热烈疯狂的追逐中！",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/28c1D19A-3D98-d8bA-7D77-CDEBDa89bdfb.mp4",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/attZootopiaHotPursuit;entityType=Attraction;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "facilityId": "attZootopiaHotPursuit;entityType=Attraction;destination=shdr",
+              "dummyType": "Attraction"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "play",
+                  "module_order": "3"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "8c5ef8a3-c34b-4dab-9ef1-8868093e5bc8",
+            "itemKey": "7135dbcd-a17c-4fab-ab50-44a137cc2f61",
+            "subTitle": "跟米奇和高飞一起，在迪士尼经典故事中遨游吧！",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/C0F6CF12-CFdf-82Af-5Dda-f1F9A2358F87.mp4",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/entMickeyStorybookAdventure;entityType=Entertainment;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "facilityId": "entMickeyStorybookAdventure;entityType=Entertainment;destination=shdr",
+              "dummyType": "Entertainment"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "play",
+                  "module_order": "3"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "a9b51aa6-3212-428f-a05a-4b4596973273",
+            "itemKey": "553867e0-85c5-4da3-9b0e-0175ea6a4329",
+            "subTitle": "进入“创”的电子网络世界，极速转向，全力奔驰吧！",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/bDD1971d-FBf5-83A0-0eb1-ae6Ed64Cbe74.mp4",
+            "router": {
+              "path": "wdpr-shdr://finderDetail/attTronLightcyclePowerRun;entityType=Attraction;destination=shdr?dummyType=",
+              "method": "deeplink",
+              "requiredLogin": false
+            },
+            "customData": {
+              "facilityId": "attTronLightcyclePowerRun;entityType=Attraction;destination=shdr",
+              "dummyType": "Attraction"
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{facilityId}",
+                  "page_name": "content/homepage",
+                  "module_name": "play",
+                  "module_order": "3"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": 5
+      },
+      {
+        "id": 1589,
+        "code": "HotRegularDatasource",
+        "itemsList": [
+          {
+            "id": "776886ba-371c-41a2-9567-b1a7dec0b1d6",
+            "itemKey": "f7cedf16-5072-4bfa-a9be-d60124d760e3",
+            "title": "特选商品园内购买名额抽签",
+            "name": "special_merchandise_draw",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/c9D7bDf3-2B39-9C7C-C7D7-F66c29eC953D.png",
+            "router": {
+              "path": "wdpr-shdr://anniversary",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "profile",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "highlights",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "39b1c5df-39b1-48a4-b9ca-bbb898507ef0",
+            "itemKey": "02e067d1-a112-46d1-93b6-2543347be33f",
+            "title": "【全新】臻享套装， 一日畅玩，全天无忧",
+            "name": "new_disney_premier_access_deluxe_set",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/Dd6fc64b-A8cE-B6d8-585b-241179e7B3Ab.jpg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fgonglve%2Fpost%2F17093",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "highlights",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "7a02f48c-a3b5-4aac-91ed-d91c4a6a75f1",
+            "itemKey": "3e4e6741-6b91-484e-81d4-41833dd7219c",
+            "title": "全新演出｜限时呈现快来先睹为快！",
+            "name": "a_limited_time_new_show",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/Cd7cE21D-aAc9-6fAB-fB5B-dE7dDD94Df99.png",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fgonglve%2Fpost%2F16752",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "highlights",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "79be8166-5a9b-4de9-a69c-feb6dc301106",
+            "itemKey": "c1f7800f-bb33-4781-a349-9c608e2087ae",
+            "title": "成为迪士尼会员，享至高420元好礼！",
+            "name": "become_a_disney_Member_enjoy_a_magical_journey",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/eAB4DEe3-5edd-F4EA-1104-3Ce2efed423d.jpg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.www.shanghaidisneyresort.com%2Fdprofile%2Fzh%2Fmember%2Flanding%3Fentry_point%3Dapp_hp_highlights",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "profile",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "highlights",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "segmentation": [
+                "{\"id\":\"app_default\",\"name\":\"default\",\"note\":null}"
+              ],
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "3ef29666-0d3c-4aee-ac28-bd0e4064e2f0",
+            "itemKey": "2d68627e-4ded-4451-8fd1-75ef07fc1fb8",
+            "title": "限时惊喜 | 云闪付满 1000元减100元",
+            "name": "enjoy_rmb_100_off_with_unionpay",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/7122AbFf-bcDC-CBdD-9BFD-3DbFD6a29e9d.jpg",
+            "router": {
+              "path": "wdpr-shdr://dynamicPage?pageCategory=products-promotion-d",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "highlights",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": null
+      },
+      {
+        "id": 1231,
+        "code": "TravelGuideCollectionDatasource",
+        "itemsList": [
+          {
+            "id": "2728819c-dae3-471f-b80f-36edfc5ae4b8",
+            "itemKey": "81a7692e-a0e3-4ef0-9763-836af0efe571",
+            "title": "亲子\\n时光",
+            "name": "family_outings",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/86d5C553-27A1-CaeD-e7dB-2ff1b4122aC5.jpg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fgonglve%2Fpost%2Fpractical%2Ffamily-itinerary%2F",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "travel_guide",
+                  "module_order": "6"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "58da04ab-a093-4f74-85ab-bffd6938b3a7",
+            "itemKey": "c91488ec-e562-4662-a999-00566fe65e29",
+            "title": "新手\\n游园",
+            "name": "first_timers",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/fe9d74cd-440b-bc59-Bcc0-fa1c5C2aF25A.jpg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fgonglve%2Fpost%2Fpractical%2Ffirst-timer-itinerary%2F",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "travel_guide",
+                  "module_order": "6"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "3a17bb51-5ca8-4c07-aaf9-b7f6bd80a657",
+            "itemKey": "db1439a9-aa1d-412d-bf3c-23afee6c0ce9",
+            "title": "省时\\n省力",
+            "name": "time_saving_tips",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/439Febe1-AbAa-ABC8-0Af4-6B6fAD9d9B88.jpg",
+            "router": {
+              "path": "wdpr-shdr://dynamicPage?pageCategory=Seasonal%20Events",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "travel_guide",
+                  "module_order": "6"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "70b0e00f-04f1-4c23-82d1-725f2b42d48c",
+            "itemKey": "a4b135c0-42d4-47a5-bfd3-7add2bece229",
+            "title": "奇妙\\n庆生",
+            "name": "birthday_celebrations",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/F7B43b36-E3dC-8d70-d29E-CFfb993232a8.jpeg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fgonglve%2Fpost%2Fpractical%2Fbirthday-adult%2F",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "travel_guide",
+                  "module_order": "6"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": null
+      },
+      {
+        "id": 1574,
+        "code": "TopBannerDatasourceRevamp1.1",
+        "itemsList": [
+          {
+            "id": "b4ac708c-b517-4eb1-a11b-285f7eb46a62",
+            "itemKey": "28443eb0-1a67-4d91-9176-7203f57291bb",
+            "name": "evergreen",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/6DBddfcC-3BcE-dDD4-4ee2-FACfcd793667.png",
+            "background": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/98CDcb28-cE1e-Ba3a-fC37-B62e8FbD49Dd.png",
+            "router": {
+              "path": "wdpr-shdr://dynamicPage?pageCategory=products-promotion-s",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{parent_id}",
+                  "screen_type": "homepage",
+                  "page_name": "content/homepage",
+                  "module_name": "top_banner",
+                  "module_order": "1"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": 5
+      },
+      {
+        "id": 1073,
+        "code": "HotelTriSectionStrutureDatasource",
+        "itemsList": [
+          {
+            "id": "2d281165-39d6-4eca-b43f-a8fb83a13942",
+            "itemKey": "590f2403-5885-41d3-b960-052590f7ce95",
+            "title": "酒店预订指南",
+            "subTitle": "一站式吃住玩",
+            "name": "hotel_packages",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/AB20F3fD-d5ee-DBFc-D77B-d3BBb4463e7B.jpg",
+            "router": {
+              "path": "wdpr-shdr://dynamicPage?pageCategory=Hotel%20Products",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "hotel_packages",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "hotel",
+                  "module_order": "3.2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "9938dd67-40af-458b-80b5-0a66fd06441d",
+            "itemKey": "506a03e2-8383-4bf3-a834-6b222287c4ac",
+            "title": "上海迪士尼乐园酒店",
+            "name": "disneyland_hotel",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/ACBFeCeb-53cF-9E8A-94dF-9b16CFD23F1C.jpg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fcentral.shanghaidisneyresort.com%2Fcommerce%2Fhotel%2Froom-list%3FhotelCode%3DSHDLH%26tracking_id%3D",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "disneyland_hotel",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "hotel",
+                  "module_order": "3.2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "e3a3d202-6471-4311-9872-12481271042b",
+            "itemKey": "1cee6215-5559-4d16-9911-ad48d7a82e77",
+            "title": "玩具总动员酒店",
+            "name": "toy_story_hotel",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/275ed1Be-1358-5fC6-55Fc-22Cd362FD6B9.jpg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fcentral.shanghaidisneyresort.com%2Fcommerce%2Fhotel%2Froom-list%3FhotelCode%3DSHTSH%26tracking_id%3D",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "tracking": {
+              "clickEvent": "module_click",
+              "properties": {
+                "click": {
+                  "content_name": "toy_story_hotel",
+                  "module_id": "{id}",
+                  "screen_type": "homepage",
+                  "content_id": "{id}",
+                  "page_name": "content/homepage",
+                  "module_name": "hotel",
+                  "module_order": "3.2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": null
+      },
+      {
+        "id": 1598,
+        "code": "NotificationBarRevamp1.1",
+        "itemsList": [
+          {
+            "id": "9f6883ad-1ded-4a70-992b-cd4ee9b64ce9",
+            "itemKey": "99b696f6-e329-48a9-85eb-48c9eeb08ab2",
+            "subTitle": "由于客流高峰，周末及节假日期间，上海迪士尼度假区的各停车场可能接近或达到最大承载量。我们建议在周末及节假日期间造访上海迪士尼乐园及迪士尼小镇的游客选择地铁、出租车或其他公共交通工具出行。",
+            "text": "由于客流高峰，周末及节假日期间，上海迪士尼度假区的各停车场可能接近或达到最大承载量。我们建议在周末及节假日期间造访上海迪士尼乐园及迪士尼小镇的游客选择地铁、出租车或其他公共交通工具出行。",
+            "name": "due_to_high_demand_shanghai_disney_resort_parking_lots_will_be_at_or_near_full_capacity_during_the_weekends_and_holidays",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/EaCA9568-fBbB-98c4-39dD-27B6c4A5cBAd.jpeg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fcentral.shanghaidisneyresort.com%2Fcart%2Fcommon%2Fpage%2Fshdr-important-notice-parking",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "date": "2024-10-23",
+              "backgroundColor": "#FBFBFB"
+            },
+            "tracking": {
+              "clickEvent": "content_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "content_id": "{id}",
+                  "module_name": "news",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "8bfc5558-7118-46f4-b9cf-873e0c8bd902",
+            "itemKey": "9f3bf3d0-3008-4030-9829-913e9b301bee",
+            "subTitle": "游客装扮须知",
+            "text": "万圣节游客装扮须知",
+            "name": "guest_dress_up_guidelines",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/EaCA9568-fBbB-98c4-39dD-27B6c4A5cBAd.jpeg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.www.shanghaidisneyresort.com%2Fhalloween-dress-up-guideline%2F",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "date": "2024-10-04",
+              "backgroundColor": "#FBFBFB"
+            },
+            "tracking": {
+              "clickEvent": "content_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "content_id": "{id}",
+                  "module_name": "news",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "912041c1-a999-465d-b5a1-9485fdcf4402",
+            "itemKey": "246a1d66-3a71-4b8f-ab12-47ccdebdfba6",
+            "subTitle": "上海迪士尼度假区将于年底前开始实行实名制购票政策",
+            "text": "在上海迪士尼度假区，我们借助创新科技，不断探索新的方式来进一步提升游客体验。作为度假区提升游客体验的承诺之一，同时积极配合政府打击非法商业活动，上海迪士尼度假区将于今年年底前正式推行全新实名制购票政策。政策生效的具体日期将在生效日临近前公布。",
+            "name": "shanghai_disney_resort_to_launch_real_name_ticketing_policy_prior_to_yearend",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/EaCA9568-fBbB-98c4-39dD-27B6c4A5cBAd.jpeg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.www.shanghaidisneyresort.com%2Fshanghai-disney-resort-real-name-ticketing-policy%2F",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "date": "2024-09-24",
+              "backgroundColor": "#FBFBFB"
+            },
+            "tracking": {
+              "clickEvent": "content_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "content_id": "{id}",
+                  "module_name": "news",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "f809ce82-1e23-46e6-b793-e2c8a186ea09",
+            "itemKey": "5f725bd9-9a13-42c8-8b13-447889fe3464",
+            "subTitle": "关于2024年9月15日乐园门票和与奇梦之光幻影秀相关的指定日产品和服务",
+            "text": "持有已使用的2024年9月15日上海迪士尼乐园门票的游客，可以在2024年9月18日至2025年3月18日期间任选一天的下午3:00之后到访上海迪士尼乐园，无需提前预约。再次到访时",
+            "name": "for_dated_park_tickets_and_other_products_and_service_on_september_15_2024",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/EaCA9568-fBbB-98c4-39dD-27B6c4A5cBAd.jpeg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fcentral.shanghaidisneyresort.com%2Fcart%2Fcommon%2Fpage%2Fshdr-important-notice-20240915",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "date": "2024-09-15",
+              "backgroundColor": "#FBFBFB"
+            },
+            "tracking": {
+              "clickEvent": "content_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "content_id": "{id}",
+                  "module_name": "news",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "9f6883ad-1ded-4a70-992b-cd4ee9b64ce9",
+            "itemKey": "052d0f7c-7f56-4b31-a6ba-6dae0d963060",
+            "subTitle": "点击申请X月未使用门票退款",
+            "text": "点击申请X月未使用门票退款",
+            "name": "tap_here_to_apply_for_a_refund_for_park_tickets",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/EaCA9568-fBbB-98c4-39dD-27B6c4A5cBAd.jpeg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.www.shanghaidisneyresort.com%2Fticketing%2Frefund",
+              "method": "deeplink",
+              "privacyPolicyAcceptedRequired": "",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "date": "2024-09-14",
+              "backgroundColor": "#FBFBFB"
+            },
+            "tracking": {
+              "clickEvent": "content_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "content_id": "{id}",
+                  "module_name": "news",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "968d9d4d-6e1f-4cb1-bee8-1c7a1c4508dd",
+            "itemKey": "2a0a8a5b-2975-4752-a35a-f85073186d75",
+            "subTitle": "上海迪士尼度假区的小型车及旅游客车停车场于2024年8月8日起实行出口计费以及调整机动车充电运营服务（试运营）",
+            "text": "上海迪士尼度假区的小型车及旅游客车停车场于2024年8月8日起实行出口计费以及调整机动车充电运营服务（试运营）",
+            "name": "pay-before-exit_implementation_and_motor_vehicle_charging_services",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/EaCA9568-fBbB-98c4-39dD-27B6c4A5cBAd.jpeg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fstage.www.shanghaidisneyresort.com%2Fdisney-car-and-coach-parking-lot-notice%2F",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "date": "2024-08-08",
+              "backgroundColor": "#FBFBFB"
+            },
+            "tracking": {
+              "clickEvent": "content_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "content_id": "{id}",
+                  "module_name": "news",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          },
+          {
+            "id": "8c5e20f2-de23-4c6f-9e7d-7c1c6ad7ca0c",
+            "itemKey": "05463312-6666-4c1c-903c-80b426884815",
+            "subTitle": "为了保护游客权益，我们强烈建议游客仅通过上海迪士尼度假区官方和授权渠道购买度假区产品和服务。",
+            "text": "为了保护游客权益，我们强烈建议游客仅通过上海迪士尼度假区官方和授权渠道购买度假区产品和服务。\n",
+            "name": "TO_PROTECT_GUEST_RIGHTS_WE_REMIND_ALL_GUESTS_TO_ONLY_PURCHASE_SHANGHAI_DISNEY_RESORT_PRODUCTS_AND_SERVICES_VIA_OFFICIAL_AND_AUTHORIZED_CHANNELS",
+            "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/EaCA9568-fBbB-98c4-39dD-27B6c4A5cBAd.jpeg",
+            "router": {
+              "path": "wdpr-shdr://hybrid?url=https%3A%2F%2Fcentral.shanghaidisneyresort.com%2Fcart%2Fcommon%2Fpage%2Fshdr-important-notice-20240510",
+              "method": "deeplink",
+              "requiredLogin": false,
+              "isAccessibilitySupport": false
+            },
+            "customData": {
+              "date": "2022-01-01",
+              "backgroundColor": "#FBFBFB"
+            },
+            "tracking": {
+              "clickEvent": "content_click",
+              "properties": {
+                "click": {
+                  "content_name": "{name}",
+                  "module_id": "{id}",
+                  "content_id": "{id}",
+                  "module_name": "news",
+                  "module_order": "2"
+                }
+              }
+            },
+            "showStatus": {
+              "requireAP": "All",
+              "inPeriod": "All",
+              "display": "Yes",
+              "inPark": "All"
+            }
+          }
+        ],
+        "itemsTempList": null,
+        "sourceFlag": 7,
+        "groupNum": 1,
+        "isOrder": true,
+        "mobileNum": null
+      }
+    ],
+    "styles": [
+      {
+        "type": "Disney Characters",
+        "styleId": "Disney Characters-1",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "size": {
+              "image": {
+                "width": 70,
+                "height": 70,
+                "radius": 35
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Horizontal Scroll",
+        "styleId": "horizon-scroll-3",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "margin": {
+              "section": {
+                "top": 0,
+                "left": 0,
+                "right": 0,
+                "horizon": 12
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Tab Item",
+        "styleId": "tab-item-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Page",
+        "styleId": "page-common",
+        "style": {
+          "font": {},
+          "color": {
+            "color": {
+              "background": {
+                "normal": "#FBFBFB"
+              }
+            }
+          },
+          "layout": {}
+        }
+      },
+      {
+        "type": "Title More Header",
+        "styleId": "title-more-header-common",
+        "style": {
+          "font": {},
+          "color": {
+            "title": {
+              "normal": "#1C1E41"
+            }
+          },
+          "layout": {}
+        }
+      },
+      {
+        "type": "Single View",
+        "styleId": "header-gryo-style-1",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "margin": {
+              "section": {
+                "bottom": 14
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Gyro Image",
+        "styleId": "header-gryo-item-style-1",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Linkage CTA Item",
+        "styleId": "linkage-cta-item-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Notification Item",
+        "styleId": "linkage-notification-item-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Hot Item",
+        "styleId": "hot-item-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Question",
+        "styleId": "question-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "margin": {
+              "section": {
+                "bottom": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Question Title",
+        "styleId": "question-title-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Question Selection",
+        "styleId": "question-selection-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Question Selection Response",
+        "styleId": "question-selection-response-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Progress Banner",
+        "styleId": "progress-banner-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Banner Item",
+        "styleId": "banner-item-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Trisection Structure Left",
+        "styleId": "trisection-structure-left-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Trisection Structure Item",
+        "styleId": "trisection-structure-item-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Collection",
+        "styleId": "collection-common",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Labels Collection Item",
+        "styleId": "Collection-Item-With-White-Title",
+        "style": {
+          "font": {},
+          "color": {
+            "title": {
+              "normal": "#FFFFFF"
+            }
+          },
+          "layout": {}
+        }
+      },
+      {
+        "type": "Electronic Business Licenses Card",
+        "styleId": "Electronic Business Licenses",
+        "style": {
+          "font": {},
+          "color": {
+            "background": {
+              "normal": "#003288"
+            }
+          },
+          "layout": {
+            "margin": {
+              "section": {
+                "bottom": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Electronic Business Licenses Item",
+        "styleId": "Legal-Card-Item-1",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Full Images Item",
+        "styleId": "Full-Image-Item-1",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Horizontal Scroll",
+        "styleId": "Horizontal Scroll Zero Bottom",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "margin": {
+              "section": {
+                "left": 0,
+                "right": 0,
+                "bottom": 0,
+                "horizon": 12
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Full Images List",
+        "styleId": "Full-Image-List",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "margin": {
+              "section": {
+                "top": 0,
+                "bottom": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Key Entries",
+        "styleId": "key-entries",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "margin": {
+              "section": {
+                "bottom": 33
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Park Hours Item",
+        "styleId": "park-hours-item",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {}
+        }
+      },
+      {
+        "type": "Notification",
+        "styleId": "Notificaiton-Revamp-1",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "margin": {
+              "section": {
+                "bottom": 26
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "Park Hours",
+        "styleId": "Park-Hour-Revamp-1",
+        "style": {
+          "font": {},
+          "color": {},
+          "layout": {
+            "margin": {
+              "section": {
+                "bottom": 30
+              }
+            }
+          }
+        }
+      }
+    ],
+    "tab": {
+      "id": 1394,
       "segmentsList": [
         {
-          "id": "f7dcbe45-e14c-4395-8eb6-0f7447de1cf4",
-          "name": "Electronic Business Licenses Card",
-          "styleId": "Legal-Card-1",
+          "id": "b1ac46d3-42b8-48e2-b5d5-b00df9b76043",
+          "name": "tabs",
           "items": [
             {
-              "id": "eaa15c52-ccd9-435c-9656-2e1f39f220a3",
-              "styleId": "Legal-Card-Item-1",
-              "order": 0,
+              "id": "1910e4ab-43e9-4dac-8f41-109300ac7e1c",
+              "name": "首页",
+              "styleId": "tab-item-common",
+              "tracking": {
+                "clickEvent": "navigation_click",
+                "properties": {
+                  "click": {
+                    "navigation_location": "bottom",
+                    "screen_type": "homepage",
+                    "category": "home",
+                    "page_name": "content/homepage"
+                  }
+                }
+              },
+              "background": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/63F8eE9b-0CcD-57AF-A17D-9801c9246fee.json",
               "needDataSource": false,
-              "title": "沪ICP备15053331号-3",
-              "image": "https://static-le.shanghaidisneyresort.com/latest/direct-channel/resource/eEdf9cF8-ED3D-A4C2-53a4-B53e46e5A26e.jpg",
-              "showStatus": {
-                "inPeriod": "All",
-                "requireAP": "All",
-                "inPark": "All"
+              "title": "首页",
+              "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/63F8eE9b-0CcD-57AF-A17D-9801c9246fee.json",
+              "router": {
+                "method": "tab",
+                "path": "wdpr-shdr://dynamicPage?pageCategory=Home Page Revamp1.1",
+                "requiredLogin": false
               }
             },
             {
-              "id": "22474c8c-d2d8-403c-a068-029a7726e1c5",
-              "order": 0,
+              "id": "5620db78-ae01-43d4-9a8b-f7fe5e21a18b",
+              "name": "商城",
+              "styleId": "tab-item-common",
+              "tracking": {
+                "clickEvent": "navigation_click",
+                "properties": {
+                  "click": {
+                    "navigation_location": "bottom",
+                    "category": "store",
+                    "screen_type": "commerce_landing",
+                    "page_name": "commerce/landing"
+                  }
+                }
+              },
+              "background": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/32FDC4bE-802B-155E-6d59-22D22Bc3Cbc5.json",
               "needDataSource": false,
-              "title": "沪公网安备31011502002267号",
-              "image": "https://static-le.shanghaidisneyresort.com/latest/direct-channel/resource/3d981fCf-6C5A-A84b-ee9E-09dEc9e1Cc45.png",
-              "showStatus": {
-                "inPeriod": "All",
-                "requireAP": "All",
-                "inPark": "All"
+              "title": "商城",
+              "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/32FDC4bE-802B-155E-6d59-22D22Bc3Cbc5.json",
+              "router": {
+                "method": "tab",
+                "path": "wdpr-shdr://hybrid?url=https://stage.central.shanghaidisneyresort.com/commerce/",
+                "requiredLogin": false
               }
             },
             {
-              "id": "fc6140d5-36d1-4ac9-8d73-8cfd39622555",
-              "order": 0,
+              "id": "3c63ba43-4267-4ca8-b7ad-6a28252fa7fb",
+              "name": "地图",
+              "styleId": "tab-item-common",
+              "tracking": {
+                "clickEvent": "navigation_click",
+                "properties": {
+                  "click": {
+                    "navigation_location": "bottom",
+                    "category": "map",
+                    "screen_type": "map",
+                    "page_name": "content/map"
+                  }
+                }
+              },
+              "background": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/F1AE5F3D-aA6C-49E8-F455-9b8AD8E207fd.png",
               "needDataSource": false,
-              "title": "电子营业执照",
-              "image": "https://static-le.shanghaidisneyresort.com/latest/direct-channel/resource/3AfEAc11-5262-D479-A9cE-0117BF3e9FdC.png",
-              "showStatus": {
-                "inPeriod": "All",
-                "requireAP": "All",
-                "inPark": "All"
+              "title": "地图",
+              "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/F1AE5F3D-aA6C-49E8-F455-9b8AD8E207fd.png",
+              "router": {
+                "method": "tab",
+                "path": "SHDRFinder",
+                "requiredLogin": false
+              }
+            },
+            {
+              "id": "27831941-da06-43ba-8cda-0b9dc783a491",
+              "name": "行程",
+              "styleId": "tab-item-common",
+              "tracking": {
+                "clickEvent": "navigation_click",
+                "properties": {
+                  "click": {
+                    "navigation_location": "bottom",
+                    "category": "plan",
+                    "screen_type": "myplan",
+                    "page_name": "tools/myplan"
+                  }
+                }
+              },
+              "background": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/ea347F8E-6e9e-39dE-A02f-Af170a6Fb58d.json",
+              "needDataSource": false,
+              "title": "行程",
+              "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/ea347F8E-6e9e-39dE-A02f-Af170a6Fb58d.json",
+              "router": {
+                "method": "tab",
+                "path": "SHDRItineraryMyPlans",
+                "requiredLogin": false
+              }
+            },
+            {
+              "id": "c8963862-5ffd-4bfb-886c-3e20c82e25ed",
+              "name": "我的",
+              "styleId": "tab-item-common",
+              "tracking": {
+                "clickEvent": "navigation_click",
+                "properties": {
+                  "click": {
+                    "navigation_location": "bottom",
+                    "category": "me",
+                    "screen_type": "me",
+                    "page_name": "tools/me"
+                  }
+                }
+              },
+              "background": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/4D5cEdD3-1D8A-38fd-531e-63adc0dDBc2b.json",
+              "needDataSource": false,
+              "title": "我的",
+              "image": "https://static-le.shanghaidisneyresort.com/stage/direct-channel/resource/4D5cEdD3-1D8A-38fd-531e-63adc0dDBc2b.json",
+              "router": {
+                "method": "tab",
+                "path": "wdpr-shdr://dynamicPage?pageCategory=My Center DataSource10.3",
+                "requiredLogin": false
               }
             }
-          ],
-          "showStatus": {
-            "inPeriod": "All",
-            "requireAP": "All",
-            "inPark": "All"
-          }
-        },
-        {
-          "id": "f7dcbe45-e14c-4395-8eb6-0f7447de1cf4",
-          "name": "Full Images List",
-          "styleId": "Full-Image-List-1",
-          "items": [
-            {
-              "id": "eaa15c52-ccd9-435c-9656-2e1f39f220a3",
-              "styleId": "Full-Image-Item-1",
-              "order": 0,
-              "needDataSource": false,
-              "image": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/9b70951ac53a1b53/Img_feature1.png",
-              "router":{
-                "method":"deeplink",
-                "path":"wdpr-shdr://weblink?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fen%2Fhalloween-celebration-2022%2F"
-              },
-              "showStatus": {
-                "inPeriod": "All",
-                "requireAP": "All",
-                "inPark": "All"
-              }
-            },
-            {
-              "id": "22474c8c-d2d8-403c-a068-029a7726e1c5",
-              "styleId": "Full-Image-Item-1",
-              "order": 0,
-              "needDataSource": false,
-              "router":{
-                "method":"deeplink",
-                "path":"wdpr-shdr://anniversary"
-              },
-              "image": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/b3225c18309a3fdb/Img_feature2.png",
-              "showStatus": {
-                "inPeriod": "All",
-                "requireAP": "All",
-                "inPark": "All"
-              }
-            },
-            {
-              "id": "fc6140d5-36d1-4ac9-8d73-8cfd39622555",
-              "order": 0,
-              "needDataSource": false,
-              "styleId": "Full-Image-Item-1",
-              "router":{
-                "method":"deeplink",
-                "path":"wdpr-shdr://hybrid?url=https%3A%2F%2Fwww.shanghaidisneyresort.com%2Fen%2Ftickets%2Fshdr-theme-park-ticket-concierge-services-package%2F"
-              },
-              "image": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/ee3e07b79792f945/mickey-avatarMobileSquare.png",
-              "showStatus": {
-                "inPeriod": "All",
-                "requireAP": "All",
-                "inPark": "All"
-              }
-            }
-          ],
-          "showStatus": {
-            "inPeriod": "All",
-            "requireAP": "All",
-            "inPark": "All"
-          }
+          ]
         }
       ]
-    }
-  ],
-  "dataSource": [
-    {
-      "id": 1,
-      "code": "d50afe10a95c70fa",
-      "itemsList": [
-        {
-          "id": 5,
-          "title": "title1",
-          "name": "one2",
-          "image": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/7fbf0ebc08a004e1/9d86a09a09219d6997944f1c35df65b8.gif",
-          "background": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/c0ed1d5b979384ad/fistpic.png"
-        },
-        {
-          "id": 5,
-          "title": "title2",
-          "name": "title3",
-          "image": "https://secure.cdn2.wdpromedia.cn/media/wdpro-shdr-assets/prod/zh-cn-cn/system/images/shdr-homepage-billboard-5th-birthday-sc-v5.jpg",
-          "background": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/cbe3c53ffb0e256f/5th-birthday-small.jpg"
-        },
-        {
-          "id": 5,
-          "title": "title4",
-          "name": "one2",
-          "image": "https://secure.cdn2.wdpromedia.cn/media/wdpro-shdr-assets/prod/zh-cn-cn/system/images/shdr-homepage-billboard-crystal-pass-2021-sc-new-4.jpg"
-        },
-        {
-          "id": 5,
-          "title": "",
-          "name": "one2",
-          "image": "https://secure.cdn2.wdpromedia.cn/media/wdpro-shdr-assets/prod/zh-cn-cn/system/images/shdr-homepage-billboard-hotel-2021-sc-new-5.jpg"
-        },
-        {
-          "id": 5,
-          "title": "",
-          "name": "one2",
-          "image": "https://secure.cdn2.wdpromedia.cn/media/wdpro-shdr-assets/prod/zh-cn-cn/system/images/shdr-homepage-billboard-play-and-dine-2021-sc-new-4.jpg"
-        },
-        {
-          "id": 5,
-          "title": "",
-          "name": "one2",
-          "image": "https://cdn1.parksmedia.wdprapps.disney.com/dam/disney-world/home/video/50th/DIQF7427000H-walt-disney-world-50th-anniversary-video-1280x720.mp4",
-          "background": "https://static-le.shanghaidisneyresort.com/109dd807ac5d37d1/media/f3ebe9b131912b81/50th.png"
-        }
-      ],
-      "createTime": null,
-      "updateTime": null,
-      "remark": null
-    }
-  ],
-  "styles": [
-    {
-      "type": "Page",
-      "styleId": "page-theme-3",
-      "style": {
-        "font": {},
-        "color": {},
-        "layout": {}
-      }
     },
-    {
-      "type": "Electronic Business Licenses Card",
-      "styleId": "Legal-Card-1",
-      "style": {
-        "font": {},
-        "color": {},
-        "layout": {}
-      }
-    },
-    {
-      "type": "Electronic Business Licenses Item",
-      "styleId": "Legal-Card-Item-1",
-      "style": {
-        "font": {},
-        "color": {},
-        "layout": {}
-      }
-    },
-    {
-      "type": "Full Images List",
-      "styleId": "Full-Image-List-1",
-      "style": {
-        "font": {},
-        "color": {},
-        "layout":{
-          "margin":{
-            "section":{
-              "left":0,
-              "right":0,
-              "top":0,
-              "bottom":0,
-              "horizon":0
-            }
-          }
-        }
-      }
-    },
-    {
-      "type": "Full Images Item",
-      "styleId": "Full-Image-Item-1",
-      "style": {
-        "font": {},
-        "color": {},
-        "layout": {}
-      }
-    }
-  ]
+    "sourceCodes": null,
+    "cdpSourceCodes": null,
+    "pageCategory": "Home Page Revamp1.1",
+    "segmentationId": null,
+    "segmentationIds": []
+  }
 }
